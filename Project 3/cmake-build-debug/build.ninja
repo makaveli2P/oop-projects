@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: projectthree
+# Project: project3
 # Configurations: Debug
 # =============================================================================
 
@@ -39,46 +39,64 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/dagarw7/Documents/UIC/Sem$ 1/CS474$ OOLE/Week$ 11/projectthree/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/dagarw7/Documents/UIC/Sem$ 1/project3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target projectthree
+# Object build statements for EXECUTABLE target project3
 
 
 #############################################
-# Order-only phony target for projectthree
+# Order-only phony target for project3
 
-build cmake_object_order_depends_target_projectthree: phony || CMakeFiles/projectthree.dir
+build cmake_object_order_depends_target_project3: phony || CMakeFiles/project3.dir
 
-build CMakeFiles/projectthree.dir/main.cpp.obj: CXX_COMPILER__projectthree_Debug C$:/Users/dagarw7/Documents/UIC/Sem$ 1/CS474$ OOLE/Week$ 11/projectthree/main.cpp || cmake_object_order_depends_target_projectthree
-  DEP_FILE = CMakeFiles\projectthree.dir\main.cpp.obj.d
+build CMakeFiles/project3.dir/main.cpp.obj: CXX_COMPILER__project3_Debug C$:/Users/dagarw7/Documents/UIC/Sem$ 1/project3/main.cpp || cmake_object_order_depends_target_project3
+  DEP_FILE = CMakeFiles\project3.dir\main.cpp.obj.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles\projectthree.dir
-  OBJECT_FILE_DIR = CMakeFiles\projectthree.dir
+  OBJECT_DIR = CMakeFiles\project3.dir
+  OBJECT_FILE_DIR = CMakeFiles\project3.dir
+
+build CMakeFiles/project3.dir/BST.cpp.obj: CXX_COMPILER__project3_Debug C$:/Users/dagarw7/Documents/UIC/Sem$ 1/project3/BST.cpp || cmake_object_order_depends_target_project3
+  DEP_FILE = CMakeFiles\project3.dir\BST.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\project3.dir
+  OBJECT_FILE_DIR = CMakeFiles\project3.dir
+
+build CMakeFiles/project3.dir/Node.cpp.obj: CXX_COMPILER__project3_Debug C$:/Users/dagarw7/Documents/UIC/Sem$ 1/project3/Node.cpp || cmake_object_order_depends_target_project3
+  DEP_FILE = CMakeFiles\project3.dir\Node.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\project3.dir
+  OBJECT_FILE_DIR = CMakeFiles\project3.dir
+
+build CMakeFiles/project3.dir/aString.cpp.obj: CXX_COMPILER__project3_Debug C$:/Users/dagarw7/Documents/UIC/Sem$ 1/project3/aString.cpp || cmake_object_order_depends_target_project3
+  DEP_FILE = CMakeFiles\project3.dir\aString.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\project3.dir
+  OBJECT_FILE_DIR = CMakeFiles\project3.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target projectthree
+# Link build statements for EXECUTABLE target project3
 
 
 #############################################
-# Link the executable projectthree.exe
+# Link the executable project3.exe
 
-build projectthree.exe: CXX_EXECUTABLE_LINKER__projectthree_Debug CMakeFiles/projectthree.dir/main.cpp.obj
+build project3.exe: CXX_EXECUTABLE_LINKER__project3_Debug CMakeFiles/project3.dir/main.cpp.obj CMakeFiles/project3.dir/BST.cpp.obj CMakeFiles/project3.dir/Node.cpp.obj CMakeFiles/project3.dir/aString.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\projectthree.dir
+  OBJECT_DIR = CMakeFiles\project3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = projectthree.exe
-  TARGET_IMPLIB = libprojectthree.dll.a
-  TARGET_PDB = projectthree.exe.dbg
+  TARGET_FILE = project3.exe
+  TARGET_IMPLIB = libproject3.dll.a
+  TARGET_PDB = project3.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\dagarw7\Documents\UIC\Sem 1\CS474 OOLE\Week 11\projectthree\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\dagarw7\Documents\UIC\Sem 1\project3\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +107,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\dagarw7\Documents\UIC\Sem 1\CS474 OOLE\Week 11\projectthree\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\dagarw7\Documents\UIC\Sem 1\CS474 OOLE\Week 11\projectthree" -B"C:\Users\dagarw7\Documents\UIC\Sem 1\CS474 OOLE\Week 11\projectthree\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\dagarw7\Documents\UIC\Sem 1\project3\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\dagarw7\Documents\UIC\Sem 1\project3" -B"C:\Users\dagarw7\Documents\UIC\Sem 1\project3\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -99,7 +117,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build projectthree: phony projectthree.exe
+build project3: phony project3.exe
 
 # =============================================================================
 # Folder targets.
@@ -107,9 +125,9 @@ build projectthree: phony projectthree.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/dagarw7/Documents/UIC/Sem 1/CS474 OOLE/Week 11/projectthree/cmake-build-debug
+# Folder: C:/Users/dagarw7/Documents/UIC/Sem 1/project3/cmake-build-debug
 
-build all: phony projectthree.exe
+build all: phony project3.exe
 
 # =============================================================================
 # Built-in targets

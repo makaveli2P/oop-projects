@@ -1,0 +1,15 @@
+----------------------------------------------------------------------------------------
+Author:  Dhruv Agarwal
+Created: November 09, 2022
+----------------------------------------------------------------------------------------
+Description: I have created a custom string class 'aString' with appropriate
+data members, constructors and destructors. Same for the 'Node' Class. My
+BST class has utility functions along with the appropriate constructors and destructors.
+----------------------------------------------------------------------------------------
+Program Flow: There are two objects S1 and S2 with are BST pointers and the interactive
+user will execute the commands on them. A BST root pointer gets created which is a pointer
+to aString. So, BST Node will have 3 attributes, a data field which is aString pointer and
+two Node pointers left and right.
+----------------------------------------------------------------------------------------
+Assumptions: The interactive user enters valid data.
+----------------------------------------------------------------------------------------
