@@ -22,15 +22,15 @@ This C++ program implements a simple string set calculator using binary search t
 
 ## Supported Commands
 
-- **e**: Erase set. Deletes the current S1 set.
-- **s**: Switch sets. Swaps the sets associated with S1 and S2.
-- **b**: Subset operation. Compares S1 and S2 and prints whether S2 is a proper subset of S1.
-- **c**: Copy set. Deep copies S1 into S2, deleting the previous content of S2.
-- **l**: List set contents. Prints the string values stored in the two sets in alphabetical order.
-- **a**: Add element. Adds a new string to S1, preserving the BST properties.
-- **u**: Union. Takes the set union of S1 and S2, storing the result in S1.
-- **i**: Intersection. Takes the set intersection of S1 and S2, storing the result in S1.
-- **q**: Prints sets S1 and S2 and quits the set manager.
+- `e`: Erase set. Deletes the current S1 set.
+- `s`: Switch sets. Swaps the sets associated with S1 and S2.
+- `b`: Subset operation. Compares S1 and S2 and prints whether S2 is a proper subset of S1.
+- `c`: Copy set. Deep copies S1 into S2, deleting the previous content of S2.
+- `l`: List set contents. Prints the string values stored in the two sets in alphabetical order.
+- `a`: Add element. Adds a new string to S1, preserving the BST properties.
+- `u`: Union. Takes the set union of S1 and S2, storing the result in S1.
+- `i`: Intersection. Takes the set intersection of S1 and S2, storing the result in S1.
+- `q`: Prints sets S1 and S2 and quits the set manager.
 
 ## Usage
 
