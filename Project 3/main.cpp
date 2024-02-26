@@ -1,7 +1,4 @@
 // ----------------------------------------------------------------------------------------
-// Author:  Dhruv Agarwal
-// Created: November 09, 2022
-// ----------------------------------------------------------------------------------------
 // Description: I have created a custom string class 'aString' with appropriate
 // data members, constructors and destructors. Same for the 'Node' Class. My
 // BST class has utility functions along with the appropriate constructors and destructors.
