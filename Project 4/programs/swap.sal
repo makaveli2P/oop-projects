@@ -1,0 +1,17 @@
+# swap.sal - swaps two values in memory with XCH.
+# The program has no HLT: the machine halts when the PC moves past the
+# last instruction.
+DEC FIRST
+DEC SECOND
+
+ldi 10            ; opcodes are case-insensitive
+STR FIRST
+LDI 20
+STR SECOND
+
+LDA FIRST         ; A = 10
+LDB SECOND        ; B = 20
+XCH               ; A = 20, B = 10
+STR FIRST
+XCH               ; A = 10, B = 20
+STR SECOND
