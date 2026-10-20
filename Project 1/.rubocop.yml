@@ -1,0 +1,52 @@
+plugins:
+  - rubocop-minitest
+  - rubocop-rake
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - vendor/**/*
+    - build/**/*
+    - coverage/**/*
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: single_quotes
+
+Layout/LineLength:
+  Max: 120
+
+# The renderer and the calculator have long, flat methods (one case for each
+# command or key). They read better whole than split into many small methods.
+Metrics/MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 40
+Metrics/ClassLength:
+  Max: 300
+Metrics/ModuleLength:
+  Max: 150
+Metrics/CyclomaticComplexity:
+  Max: 14
+Metrics/PerceivedComplexity:
+  Max: 14
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
+
+Naming/MethodParameterName:
+  AllowedNames: [x, y, i, o, k, n, s, c, vx, vy]
+
+Minitest/MultipleAssertions:
+  Max: 8
+
+# BST#insert and #search return true or false, as Set#add? does not; the
+# names follow the assignment.
+Naming/PredicateMethod:
+  AllowedMethods: [insert, search, attach]
