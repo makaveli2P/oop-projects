@@ -6,18 +6,36 @@ The terminal visualizer draws the three trees. It animates each command one step
 
 ## Setup
 
-You need Ruby 3.4 or newer. The program uses only the standard library (`io/console`, `prism` and `optparse`). Bundler installs the development gems (minitest, rake and RuboCop) into `vendor/bundle`.
+### 1. Use Ruby 3.4 or newer
+
+On macOS, the system Ruby in `/usr/bin` is 2.6, which is too old. If you use it, `bundle` stops with "Could not find 'bundler' (4.0.20)". Install Ruby with Homebrew and put it first on your `PATH`:
+
+```sh
+brew install ruby
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"' >> ~/.zshrc
+exec zsh
+ruby -v        # must show ruby 3.4 or newer
+```
+
+Do this one time only.
+
+### 2. Install the development gems
+
+The program uses only the standard library (`io/console`, `prism` and `optparse`). Bundler installs the development gems (minitest, rake and RuboCop) into `vendor/bundle`. Run these commands from the repository root:
 
 ```sh
 cd "Project 1"
 bundle config set --local path vendor/bundle
 bundle install
+```
+
+### 3. Run the tests
+
+```sh
 bundle exec rake          # the tests and RuboCop
 bundle exec rake test     # only the tests
 bundle exec rake lint     # only RuboCop
 ```
-
-On macOS, the system Ruby (2.6) is too old. Use the Homebrew Ruby, for example `/opt/homebrew/opt/ruby/bin/ruby` and `/opt/homebrew/opt/ruby/bin/bundle`.
 
 ## Usage
 

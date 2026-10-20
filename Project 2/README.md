@@ -8,11 +8,25 @@ This is the Ruby version. "Project 4" is the same machine in C++17. The two vers
 
 ## Setup
 
-You need Ruby 3.4 or newer. The project uses Ruby 4.0. On macOS with Homebrew, Ruby is at `/opt/homebrew/opt/ruby/bin`. The system Ruby 2.6 in `/usr/bin` is too old.
+### 1. Use Ruby 3.4 or newer
+
+On macOS, the system Ruby in `/usr/bin` is 2.6, which is too old. If you use it, `bundle` stops with "Could not find 'bundler' (4.0.20)". Install Ruby with Homebrew and put it first on your `PATH`:
+
+```sh
+brew install ruby
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"' >> ~/.zshrc
+exec zsh
+ruby -v        # must show ruby 3.4 or newer
+```
+
+Do this one time only.
+
+### 2. Install the development gems
+
+Run these commands from the repository root:
 
 ```sh
 cd "Project 2"
-export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 bundle config set --local path vendor/bundle
 bundle install
 ```
