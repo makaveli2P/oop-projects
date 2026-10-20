@@ -1,0 +1,26 @@
+; countdown.sal - counts COUNT down from 5 to 0.
+; Each pass adds 1 to LOOPS. JZS ends the loop when ADD gives 0.
+DEC COUNT
+DEC LOOPS
+DEC STEP          ; holds -1
+DEC ONE           ; holds 1
+
+LDI 5             ; address 4
+STR COUNT
+LDI -1
+STR STEP
+LDI 1
+STR ONE
+
+; Loop start: address 10.
+LDA LOOPS         ; LOOPS = LOOPS + 1
+LDB ONE
+ADD
+STR LOOPS
+LDA COUNT         ; COUNT = COUNT - 1; Z is set when COUNT is 0
+LDB STEP
+ADD
+STR COUNT
+JZS 20            ; address 18: leave the loop when Z is set
+JMP 10
+HLT               ; address 20
