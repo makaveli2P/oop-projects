@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+ruby ">= 3.4"
+
+# The program itself uses only the standard library (io/console, prism,
+# optparse). These gems are for development.
+group :development, :test do
+  gem "minitest", "~> 6.0"
+  gem "rake", "~> 13.3"
+  gem "rubocop", "~> 1.81", require: false
+  gem "rubocop-minitest", require: false
+  gem "rubocop-rake", require: false
+end

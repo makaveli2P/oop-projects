@@ -1,2 +1,7 @@
 build/
 cmake-build-*/
+
+# Ruby
+**/vendor/bundle/
+.bundle/
+coverage/
